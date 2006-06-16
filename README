@@ -1,0 +1,156 @@
+glabels
+-------------------------------------------
+gLabels is a small stand-alone program for creating 
+printable labels and business cards.
+
+Runtime requirements:
+  cygwin-1.5.19-4
+  GConf2-2.12.1-1
+  glib2-runtime-2.6.6-2
+  gtk2-x11-runtime-2.6.10-1
+  libart_lgpl2-2.3.17-1
+  libbonobo2-2.10.1-1
+  libbonoboui2-2.10.1-1
+  libglade2-2.5.1-1
+  libgnome2-2.12.0.1-1
+  libgnomeprint22-2.12.1-2
+  libgnomeprintui22-2.12.1-1
+  libgnomeui2-2.12.0-1
+  libxml2-2.6.22-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.19-4
+  autoconf2.5-2.59-3
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  libtool1.5-1.5.20-2
+  make-3.80-1
+  perl-5.8.7-4
+  pkgconfig-0.17.2-2
+  scrollkeeper-0.3.14-2
+  sed-4.1.4-1
+
+Canonical homepage:
+  http://glabels.sourceforge.net/
+
+Canonical download:
+  http://prdownloads.sourceforge.net/glabels/
+
+-------------------------------------------
+
+Build instructions:
+  unpack glabels-2.0.4-1-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  ./glabels-2.0.4-1.sh all
+
+This will create:
+  /usr/src/glabels-2.0.4-1-src.tar.bz2
+  /usr/src/glabels-2.0.4-1.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/postinstall/glabels.sh
+  /usr/bin/cygglabels-1.dll
+  /usr/bin/glabels-batch.exe
+  /usr/bin/glabels.exe
+  /usr/include/libglabels/libglabels.h
+  /usr/include/libglabels/paper.h
+  /usr/include/libglabels/template.h
+  /usr/include/libglabels/xml-paper.h
+  /usr/include/libglabels/xml-template.h
+  /usr/include/libglabels/xml.h
+  /usr/lib/libglabels.dll.a
+  /usr/lib/libglabels.la
+  /usr/share/application-registry/glabels.applications
+  /usr/share/applications/glabels.desktop
+  /usr/share/doc/Cygwin/glabels-2.0.4.README
+  /usr/share/doc/glabels-2.0.4/AUTHORS
+  /usr/share/doc/glabels-2.0.4/ChangeLog
+  /usr/share/doc/glabels-2.0.4/COPYING
+  /usr/share/doc/glabels-2.0.4/COPYING-DOCS
+  /usr/share/doc/glabels-2.0.4/INSTALL
+  /usr/share/doc/glabels-2.0.4/NEWS
+  /usr/share/doc/glabels-2.0.4/README
+  /usr/share/doc/glabels-2.0.4/TODO
+  /usr/share/glabels/dtd/glabels-2.0.dtd
+  /usr/share/glabels/glade/object-editor.glade
+  /usr/share/glabels/glade/prefs-dialog.glade
+  /usr/share/glabels/glade/template-designer.glade
+  /usr/share/glabels/templates/avery-iso-templates.xml
+  /usr/share/glabels/templates/avery-other-templates.xml
+  /usr/share/glabels/templates/avery-us-templates.xml
+  /usr/share/glabels/templates/misc-iso-templates.xml
+  /usr/share/glabels/templates/misc-other-templates.xml
+  /usr/share/glabels/templates/misc-us-templates.xml
+  /usr/share/glabels/templates/paper-sizes.xml
+  /usr/share/glabels/templates/zweckform-iso-templates.xml
+  /usr/share/glabels/ui/glabels-ui.xml
+  /usr/share/gnome/help/glabels/C/figures/glabels-template-cd.png
+  /usr/share/gnome/help/glabels/C/figures/glabels-template-label.png
+  /usr/share/gnome/help/glabels/C/figures/glabels-template-layout.png
+  /usr/share/gnome/help/glabels/C/figures/main-window-empty.png
+  /usr/share/gnome/help/glabels/C/figures/merge-ex1-1.png
+  /usr/share/gnome/help/glabels/C/figures/merge-ex1-2.png
+  /usr/share/gnome/help/glabels/C/figures/merge-ex1-3.png
+  /usr/share/gnome/help/glabels/C/figures/merge-ex1-4.png
+  /usr/share/gnome/help/glabels/C/figures/merge-ex2-1.png
+  /usr/share/gnome/help/glabels/C/figures/merge-ex2-2.png
+  /usr/share/gnome/help/glabels/C/figures/merge-ex2-3.png
+  /usr/share/gnome/help/glabels/C/figures/merge-ex2-4.png
+  /usr/share/gnome/help/glabels/C/figures/object-editor-sidebar.png
+  /usr/share/gnome/help/glabels/C/figures/print-copies.png
+  /usr/share/gnome/help/glabels/C/figures/print-merge.png
+  /usr/share/gnome/help/glabels/C/glabels.xml
+  /usr/share/gnome/help/glabels/C/legal.xml
+  /usr/share/locale/cs/LC_MESSAGES/glabels.mo
+  /usr/share/locale/de/LC_MESSAGES/glabels.mo
+  /usr/share/locale/es/LC_MESSAGES/glabels.mo
+  /usr/share/locale/fr/LC_MESSAGES/glabels.mo
+  /usr/share/locale/it/LC_MESSAGES/glabels.mo
+  /usr/share/locale/ja/LC_MESSAGES/glabels.mo
+  /usr/share/locale/pl/LC_MESSAGES/glabels.mo
+  /usr/share/locale/pt_BR/LC_MESSAGES/glabels.mo
+  /usr/share/locale/ru/LC_MESSAGES/glabels.mo
+  /usr/share/locale/zh_TW.Big5/LC_MESSAGES/glabels.mo
+  /usr/share/man/man1/glabels.1.gz
+  /usr/share/mime/application/x-glabels.xml
+  /usr/share/mime/packages/glabels.xml
+  /usr/share/mime-info/glabels.keys
+  /usr/share/mime-info/glabels.mime
+  /usr/share/omf/glabels/glabels-C.omf
+  /usr/share/pixmaps/glabels/ex-1layout.png
+  /usr/share/pixmaps/glabels/ex-2layouts.png
+  /usr/share/pixmaps/glabels/ex-cd-size.png
+  /usr/share/pixmaps/glabels/ex-rect-size.png
+  /usr/share/pixmaps/glabels/ex-round-size.png
+  /usr/share/pixmaps/glabels/glabels-about-logo.png
+  /usr/share/pixmaps/glabels/glabels-splash.png
+  /usr/share/pixmaps/glabels-application-x-glabels.png
+  /usr/share/pixmaps/glabels.png
+
+--------------------
+
+Port Notes:
+
+----- version 2.0.4-2 -----
+Rebuilt to fix glade widget creation bugs.
+
+----- version 2.0.4-1 -----
+Version bump.
+
+----- version 2.0.3-1 -----
+Version bump.
+
+----- version 2.0.1-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
