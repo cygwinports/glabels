@@ -6,17 +6,17 @@ printable labels and business cards.
 Runtime requirements:
   cygwin-1.5.24-2
   GConf2-2.18.0.1-1
-  gdk-pixbuf2-2.10.13-1
-  glib2-2.12.12-2
-  gtk2-x11-2.10.13-1
-  libcairo2-1.4.8-1
+  gdk-pixbuf2-2.10.14-1
+  glib2-2.12.13-1
+  gtk2-x11-2.10.14-1
+  libcairo2-1.4.10-1
   libglade2-2.6.1-1
   libgnome2-2.18.0-1
   libgnomecanvas2-2.14.0-1
   libgnomeui2-2.16.1-1
   libintl8-0.15-1
-  libxml2-2.6.28-2
-  pango-1.16.4-1
+  libxml2-2.6.29-1
+  pango-1.16.5-1
 
 Build requirements:
 (besides corresponding -devel packages)
@@ -24,7 +24,7 @@ Build requirements:
   autoconf2.5-2.61-1
   automake1.10-1.10-1
   binutils-20060817-1
-  cygport-0.3.1-1
+  cygport-0.3.5-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
   gnome-common-2.18.0-1
@@ -44,15 +44,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack glabels-2.1.3.661-1-src.tar.bz2
+  unpack glabels-2.1.4-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./glabels-2.1.3.661-1.cygport all
+  cygport ./glabels-2.1.4-1.cygport all
 
 This will create:
-  /usr/src/glabels-2.1.3.661-1-src.tar.bz2
-  /usr/src/glabels-2.1.3.661-1.tar.bz2
+  /usr/src/glabels-2.1.4-1-src.tar.bz2
+  /usr/src/glabels-2.1.4-1.tar.bz2
 
 -------------------------------------------
 
@@ -60,7 +60,7 @@ Files included in the binary package:
 
   /etc/postinstall/glabels.sh
   /etc/preremove/glabels.sh
-  /usr/bin/cygglabels-2.dll
+  /usr/bin/cygglabels-4.dll
   /usr/bin/glabels-batch.exe
   /usr/bin/glabels.exe
   /usr/include/libglabels/category.h
@@ -77,15 +77,15 @@ Files included in the binary package:
   /usr/lib/pkgconfig/libglabels.pc
   /usr/share/application-registry/glabels.applications
   /usr/share/applications/glabels.desktop
-  /usr/share/doc/Cygwin/glabels-2.1.3.661.README
-  /usr/share/doc/glabels-2.1.3.661/AUTHORS
-  /usr/share/doc/glabels-2.1.3.661/COPYING
-  /usr/share/doc/glabels-2.1.3.661/COPYING-DOCS
-  /usr/share/doc/glabels-2.1.3.661/ChangeLog
-  /usr/share/doc/glabels-2.1.3.661/INSTALL
-  /usr/share/doc/glabels-2.1.3.661/NEWS
-  /usr/share/doc/glabels-2.1.3.661/README
-  /usr/share/doc/glabels-2.1.3.661/TODO
+  /usr/share/doc/Cygwin/glabels-2.1.4.README
+  /usr/share/doc/glabels-2.1.4/AUTHORS
+  /usr/share/doc/glabels-2.1.4/COPYING
+  /usr/share/doc/glabels-2.1.4/COPYING-DOCS
+  /usr/share/doc/glabels-2.1.4/ChangeLog
+  /usr/share/doc/glabels-2.1.4/INSTALL
+  /usr/share/doc/glabels-2.1.4/NEWS
+  /usr/share/doc/glabels-2.1.4/README
+  /usr/share/doc/glabels-2.1.4/TODO
   /usr/share/glabels/dtd/glabels-2.0.dtd
   /usr/share/glabels/glade/merge-properties-dialog.glade
   /usr/share/glabels/glade/new-label-dialog.glade
@@ -166,6 +166,9 @@ Files included in the binary package:
 --------------------
 
 Port Notes:
+
+----- version 2.1.4-1 -----
+Version bump.
 
 ----- version 2.1.3.661-1 -----
 Update to SVN trunk for new features.
