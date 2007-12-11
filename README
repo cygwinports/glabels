@@ -5,18 +5,18 @@ printable labels and business cards.
 
 Runtime requirements:
   cygwin-1.5.24-2
-  GConf2-2.18.0.1-1
-  gdk-pixbuf2-2.10.14-1
-  glib2-2.12.13-1
-  gtk2-x11-2.10.14-1
-  libcairo2-1.4.10-1
-  libglade2-2.6.1-1
-  libgnome2-2.18.0-1
-  libgnomecanvas2-2.14.0-1
-  libgnomeui2-2.16.1-1
+  GConf2-2.20.1-1
+  gdk-pixbuf2-2.12.2-1
+  glib2-2.14.4-1
+  gtk2-x11-2.12.2-1
+  libcairo2-1.4.12-1
+  libglade2-2.6.2-1
+  libgnome2-2.20.1.1-1
+  libgnomecanvas2-2.20.1.1-1
+  libgnomeui2-2.20.1.1-1
   libintl8-0.15-1
-  libxml2-2.6.29-1
-  pango-1.16.5-1
+  libxml2-2.6.30-1
+  pango-1.18.3-1
 
 Build requirements:
 (besides corresponding -devel packages)
@@ -24,15 +24,15 @@ Build requirements:
   autoconf2.5-2.61-1
   automake1.10-1.10-1
   binutils-20060817-1
-  cygport-0.3.5-1
+  cygport-0.3.7-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
-  gnome-common-2.18.0-1
-  intltool-0.35.5-1
+  gnome-common-2.20.0-1
+  intltool-0.36.2-1
   libtool1.5-1.5.23a-2
   make-3.81-1
   pkg-config-0.21-1
-  scrollkeeper-0.3.14-2
+  rarian-0.6.0-1
   sed-4.1.5-2
 
 Canonical homepage:
@@ -44,49 +44,38 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack glabels-2.1.4-1-src.tar.bz2
+  unpack glabels-2.1.5-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./glabels-2.1.4-1.cygport all
+  cygport ./glabels-2.1.5-1.cygport all
 
 This will create:
-  /usr/src/glabels-2.1.4-1-src.tar.bz2
-  /usr/src/glabels-2.1.4-1.tar.bz2
+  /usr/src/glabels-2.1.5-1-src.tar.bz2
+  /usr/src/glabels-2.1.5-1.tar.bz2
+  /usr/src/libglabels-devel-2.1.5-1.tar.bz2
+  /usr/src/libglabels5-2.1.5-1.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
+Files included in the binary packages:
 
+(glabels)
   /etc/postinstall/glabels.sh
   /etc/preremove/glabels.sh
-  /usr/bin/cygglabels-4.dll
   /usr/bin/glabels-batch.exe
   /usr/bin/glabels.exe
-  /usr/include/libglabels/category.h
-  /usr/include/libglabels/enums.h
-  /usr/include/libglabels/libglabels.h
-  /usr/include/libglabels/paper.h
-  /usr/include/libglabels/template.h
-  /usr/include/libglabels/xml-category.h
-  /usr/include/libglabels/xml-paper.h
-  /usr/include/libglabels/xml-template.h
-  /usr/include/libglabels/xml.h
-  /usr/lib/libglabels.dll.a
-  /usr/lib/libglabels.la
-  /usr/lib/pkgconfig/libglabels.pc
   /usr/share/application-registry/glabels.applications
   /usr/share/applications/glabels.desktop
-  /usr/share/doc/Cygwin/glabels-2.1.4.README
-  /usr/share/doc/glabels-2.1.4/AUTHORS
-  /usr/share/doc/glabels-2.1.4/COPYING
-  /usr/share/doc/glabels-2.1.4/COPYING-DOCS
-  /usr/share/doc/glabels-2.1.4/ChangeLog
-  /usr/share/doc/glabels-2.1.4/INSTALL
-  /usr/share/doc/glabels-2.1.4/NEWS
-  /usr/share/doc/glabels-2.1.4/README
-  /usr/share/doc/glabels-2.1.4/TODO
-  /usr/share/glabels/dtd/glabels-2.0.dtd
+  /usr/share/doc/glabels-2.1.5/AUTHORS
+  /usr/share/doc/glabels-2.1.5/COPYING
+  /usr/share/doc/glabels-2.1.5/COPYING-DOCS
+  /usr/share/doc/glabels-2.1.5/ChangeLog
+  /usr/share/doc/glabels-2.1.5/INSTALL
+  /usr/share/doc/glabels-2.1.5/NEWS
+  /usr/share/doc/glabels-2.1.5/README
+  /usr/share/doc/glabels-2.1.5/TODO
+  /usr/share/glabels/dtd/glabels-2.2.dtd
   /usr/share/glabels/glade/merge-properties-dialog.glade
   /usr/share/glabels/glade/new-label-dialog.glade
   /usr/share/glabels/glade/object-editor.glade
@@ -122,24 +111,9 @@ Files included in the binary package:
   /usr/share/gnome/help/glabels/C/figures/print-merge.png
   /usr/share/gnome/help/glabels/C/glabels.xml
   /usr/share/gnome/help/glabels/C/legal.xml
-  /usr/share/gtk-doc/html/libglabels/ch01.html
-  /usr/share/gtk-doc/html/libglabels/home.png
-  /usr/share/gtk-doc/html/libglabels/index.html
-  /usr/share/gtk-doc/html/libglabels/index.sgml
-  /usr/share/gtk-doc/html/libglabels/left.png
-  /usr/share/gtk-doc/html/libglabels/libglabels-enums.html
-  /usr/share/gtk-doc/html/libglabels/libglabels-paper.html
-  /usr/share/gtk-doc/html/libglabels/libglabels-template.html
-  /usr/share/gtk-doc/html/libglabels/libglabels-xml-paper.html
-  /usr/share/gtk-doc/html/libglabels/libglabels-xml-template.html
-  /usr/share/gtk-doc/html/libglabels/libglabels-xml.html
-  /usr/share/gtk-doc/html/libglabels/libglabels.devhelp
-  /usr/share/gtk-doc/html/libglabels/libglabels.devhelp2
-  /usr/share/gtk-doc/html/libglabels/right.png
-  /usr/share/gtk-doc/html/libglabels/style.css
-  /usr/share/gtk-doc/html/libglabels/up.png
   /usr/share/locale/cs/LC_MESSAGES/glabels.mo
   /usr/share/locale/de/LC_MESSAGES/glabels.mo
+  /usr/share/locale/eo/LC_MESSAGES/glabels.mo
   /usr/share/locale/es/LC_MESSAGES/glabels.mo
   /usr/share/locale/fr/LC_MESSAGES/glabels.mo
   /usr/share/locale/it/LC_MESSAGES/glabels.mo
@@ -163,9 +137,54 @@ Files included in the binary package:
   /usr/share/pixmaps/glabels/glabels-about-logo.png
   /usr/share/pixmaps/glabels/glabels-splash.png
 
+(libglabels5)
+  /usr/bin/cygglabels-5.dll
+
+(libglabels-devel)
+  /usr/include/libglabels/category.h
+  /usr/include/libglabels/db.h
+  /usr/include/libglabels/enums.h
+  /usr/include/libglabels/libglabels.h
+  /usr/include/libglabels/paper.h
+  /usr/include/libglabels/str.h
+  /usr/include/libglabels/template.h
+  /usr/include/libglabels/xml-category.h
+  /usr/include/libglabels/xml-paper.h
+  /usr/include/libglabels/xml-template.h
+  /usr/include/libglabels/xml.h
+  /usr/lib/libglabels.dll.a
+  /usr/lib/libglabels.la
+  /usr/lib/pkgconfig/libglabels.pc
+  /usr/share/gtk-doc/html/libglabels/ch01.html
+  /usr/share/gtk-doc/html/libglabels/ch02.html
+  /usr/share/gtk-doc/html/libglabels/ch03.html
+  /usr/share/gtk-doc/html/libglabels/home.png
+  /usr/share/gtk-doc/html/libglabels/index.html
+  /usr/share/gtk-doc/html/libglabels/index.sgml
+  /usr/share/gtk-doc/html/libglabels/left.png
+  /usr/share/gtk-doc/html/libglabels/libglabels-category.html
+  /usr/share/gtk-doc/html/libglabels/libglabels-db.html
+  /usr/share/gtk-doc/html/libglabels/libglabels-enums.html
+  /usr/share/gtk-doc/html/libglabels/libglabels-paper.html
+  /usr/share/gtk-doc/html/libglabels/libglabels-str.html
+  /usr/share/gtk-doc/html/libglabels/libglabels-template.html
+  /usr/share/gtk-doc/html/libglabels/libglabels-xml-category.html
+  /usr/share/gtk-doc/html/libglabels/libglabels-xml-paper.html
+  /usr/share/gtk-doc/html/libglabels/libglabels-xml-template.html
+  /usr/share/gtk-doc/html/libglabels/libglabels-xml.html
+  /usr/share/gtk-doc/html/libglabels/libglabels.devhelp
+  /usr/share/gtk-doc/html/libglabels/libglabels.devhelp2
+  /usr/share/gtk-doc/html/libglabels/right.png
+  /usr/share/gtk-doc/html/libglabels/style.css
+  /usr/share/gtk-doc/html/libglabels/up.png
+
 --------------------
 
 Port Notes:
+
+----- version 2.1.5-1 -----
+Version bump.
+Created separate lib and devel packages.
 
 ----- version 2.1.4-1 -----
 Version bump.
