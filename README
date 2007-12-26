@@ -44,17 +44,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack glabels-2.1.5-1-src.tar.bz2
+  unpack glabels-2.2.0-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./glabels-2.1.5-1.cygport all
+  cygport ./glabels-2.2.0-1.cygport all
 
 This will create:
-  /usr/src/glabels-2.1.5-1-src.tar.bz2
-  /usr/src/glabels-2.1.5-1.tar.bz2
-  /usr/src/libglabels-devel-2.1.5-1.tar.bz2
-  /usr/src/libglabels5-2.1.5-1.tar.bz2
+  /usr/src/glabels-2.2.0-1-src.tar.bz2
+  /usr/src/glabels-2.2.0-1.tar.bz2
+  /usr/src/libglabels-devel-2.2.0-1.tar.bz2
+  /usr/src/libglabels5-2.2.0-1.tar.bz2
 
 -------------------------------------------
 
@@ -67,14 +67,14 @@ Files included in the binary packages:
   /usr/bin/glabels.exe
   /usr/share/application-registry/glabels.applications
   /usr/share/applications/glabels.desktop
-  /usr/share/doc/glabels-2.1.5/AUTHORS
-  /usr/share/doc/glabels-2.1.5/COPYING
-  /usr/share/doc/glabels-2.1.5/COPYING-DOCS
-  /usr/share/doc/glabels-2.1.5/ChangeLog
-  /usr/share/doc/glabels-2.1.5/INSTALL
-  /usr/share/doc/glabels-2.1.5/NEWS
-  /usr/share/doc/glabels-2.1.5/README
-  /usr/share/doc/glabels-2.1.5/TODO
+  /usr/share/doc/glabels-2.2.0/AUTHORS
+  /usr/share/doc/glabels-2.2.0/COPYING
+  /usr/share/doc/glabels-2.2.0/COPYING-DOCS
+  /usr/share/doc/glabels-2.2.0/ChangeLog
+  /usr/share/doc/glabels-2.2.0/INSTALL
+  /usr/share/doc/glabels-2.2.0/NEWS
+  /usr/share/doc/glabels-2.2.0/README
+  /usr/share/doc/glabels-2.2.0/TODO
   /usr/share/glabels/dtd/glabels-2.2.dtd
   /usr/share/glabels/glade/merge-properties-dialog.glade
   /usr/share/glabels/glade/new-label-dialog.glade
@@ -182,7 +182,7 @@ Files included in the binary packages:
 
 Port Notes:
 
------ version 2.1.5-1 -----
+----- version 2.2.0-1 -----
 Version bump.
 Created separate lib and devel packages.
 
