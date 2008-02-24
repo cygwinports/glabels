@@ -1,0 +1,20 @@
+inherit gnome2
+
+DESCRIPTION="GNOME label and business card creator"
+HOMEPAGE="http://glabels.sourceforge.net/"
+SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
+
+abi=5
+PKG_NAMES="${PN} lib${PN}${abi} lib${PN}-devel"
+PKG_HINTS="setup lib devel"
+PKG_CONTENTS[0]='--exclude=gtk-doc etc/ usr/bin/*.exe usr/share/'
+PKG_CONTENTS[1]="usr/bin/*-${abi}.dll"
+PKG_CONTENTS[2]='usr/include/ usr/lib/ usr/share/gtk-doc/'
+
+DIFF_EXCLUDES="stockpixbufs.h"
+
+CYGCONF_ARGS="
+	--disable-update-desktopdb
+	--disable-update-mimedb
+	--without-libebook
+"
