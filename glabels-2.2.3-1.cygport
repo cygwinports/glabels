@@ -3,6 +3,8 @@ inherit gnome2
 DESCRIPTION="GNOME label and business card creator"
 HOMEPAGE="http://glabels.sourceforge.net/"
 SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
+PATCH_URI="2.2-vpath.patch
+           2.2-no-undefined.patch"
 
 abi=5
 PKG_NAMES="${PN} lib${PN}${abi} lib${PN}-devel"
