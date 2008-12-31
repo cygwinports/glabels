@@ -1,6 +1,6 @@
 category: Publishing Gnome
-requires: cygwin glib2 libintl8 libxml2
+requires: cygwin libglabels5 libglib2.0-devel gettext libxml2-devel
 external-source: glabels
-sdesc: "GNOME label and business card creator (library runtime)"
+sdesc: "GNOME label and business card creator (library development)"
 ldesc: "gLabels is a small stand-alone program for creating
 printable labels and business cards."

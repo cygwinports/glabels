@@ -6,12 +6,10 @@ SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
 PATCH_URI="2.2-vpath.patch
            2.2-no-undefined.patch"
 
-abi=5
-PKG_NAMES="${PN} lib${PN}${abi} lib${PN}-devel"
-PKG_HINTS="setup lib devel"
-PKG_CONTENTS[0]='--exclude=gtk-doc etc/ usr/bin/*.exe usr/share/'
-PKG_CONTENTS[1]="usr/bin/*-${abi}.dll"
-PKG_CONTENTS[2]='usr/include/ usr/lib/ usr/share/gtk-doc/'
+PKG_NAMES="${PN} lib${PN}5 lib${PN}-devel"
+glabels_CONTENTS='--exclude=gtk-doc etc/ usr/bin/*.exe usr/share/'
+libglabels5_CONTENTS="usr/bin/*-5.dll"
+libglabels_devel_CONTENTS='usr/include/ usr/lib/ usr/share/gtk-doc/'
 
 DIFF_EXCLUDES="stockpixbufs.h"
 
