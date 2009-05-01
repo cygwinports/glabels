@@ -44,17 +44,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack glabels-2.2.4-1-src.tar.bz2
+  unpack glabels-2.2.5-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./glabels-2.2.4-1.cygport all
+  cygport ./glabels-2.2.5-1.cygport all
 
 This will create:
-  /usr/src/glabels-2.2.4-1-src.tar.bz2
-  /usr/src/glabels-2.2.4-1.tar.bz2
-  /usr/src/libglabels-devel-2.2.4-1.tar.bz2
-  /usr/src/libglabels5-2.2.4-1.tar.bz2
+  /usr/src/glabels-2.2.5-1-src.tar.bz2
+  /usr/src/glabels-2.2.5-1.tar.bz2
+  /usr/src/libglabels-devel-2.2.5-1.tar.bz2
+  /usr/src/libglabels5-2.2.5-1.tar.bz2
 
 -------------------------------------------
 
@@ -183,7 +183,7 @@ Files included in the binary packages:
 
 Port Notes:
 
------ version 2.2.4-10 -----
+----- version 2.2.5-1 -----
 Initial release for Cygwin 1.7.
 
 
