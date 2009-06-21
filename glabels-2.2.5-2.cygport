@@ -16,5 +16,5 @@ DIFF_EXCLUDES="stockpixbufs.h"
 CYGCONF_ARGS="
 	--disable-update-desktopdb
 	--disable-update-mimedb
-	--without-libebook
+	--with-libebook
 "
