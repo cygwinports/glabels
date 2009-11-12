@@ -4,36 +4,36 @@ gLabels is a small stand-alone program for creating
 printable labels and business cards.
 
 Runtime requirements:
-  cygwin-1.7.0-50
-  libcairo2-1.8.6-10
-  libebook1.2_9-2.26.2-1
-  libgcc1-4.3.2-2
-  libgconf2_4-2.26.0-1
-  libgdk_pixbuf2.0_0-2.16.2-1
+  cygwin-1.7.0-62
+  libcairo2-1.8.8-1
+  libebook1.2_9-2.28.1-1
+  libgcc1-4.3.4-1
+  libgconf2_4-2.28.0-1
+  libgdk_pixbuf2.0_0-2.18.3-1
   libglade2.0_0-2.6.4-1
-  libglib2.0_0-2.20.3-1
-  libgnome2_0-2.26.0-1
+  libglib2.0_0-2.22.2-1
+  libgnome2_0-2.28.0-1
   libgnomecanvas2_0-2.26.0-1
-  libgnomeui2_0-2.24.1-1
-  libgtk2.0_0-2.16.2-1
+  libgnomeui2_0-2.24.2-1
+  libgtk2.0_0-2.18.3-1
   libintl8-0.17-11
-  libpango1.0_0-1.24.2-1
-  libxml2-2.7.3-10
+  libpango1.0_0-1.26.0-1
+  libxml2-2.7.4-1
 
 Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.63-10
-  automake1.10-1.10.2-10
-  binutils-20080624-2
-  cygport-0.9.7-1
-  gawk-3.1.6-2
-  gcc4-core-4.3.2-2
-  gnome-common-2.26.0-2
+  automake1.11-1.11-10
+  binutils-2.19.51-1
+  cygport-0.9.10-1
+  gawk-3.1.7-1
+  gcc4-core-4.3.4-1
+  gnome-common-2.28.0-1
   intltool-0.40.6-1
-  libtool-2.2.7a-13
+  libtool-2.2.7a-14
   make-3.81-2
   pkg-config-0.23b-10
-  rarian-0.8.1-11
+  rarian-0.8.1-12
   sed-4.1.5-2
 
 Canonical homepage:
@@ -45,144 +45,24 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack glabels-2.2.5-1-src.tar.bz2
+  unpack glabels-2.2.6-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./glabels-2.2.5-1.cygport all
+  cygport ./glabels-2.2.6-1.cygport all
 
 This will create:
-  /usr/src/glabels-2.2.5-1-src.tar.bz2
-  /usr/src/glabels-2.2.5-1.tar.bz2
-  /usr/src/libglabels-devel-2.2.5-1.tar.bz2
-  /usr/src/libglabels5-2.2.5-1.tar.bz2
+  /usr/src/glabels-2.2.6-1-src.tar.bz2
+  /usr/src/glabels-2.2.6-1.tar.bz2
+  /usr/src/libglabels-devel-2.2.6-1.tar.bz2
+  /usr/src/libglabels5-2.2.6-1.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary packages:
-
-(glabels)
-  /etc/postinstall/glabels.sh
-  /usr/bin/glabels-batch.exe
-  /usr/bin/glabels.exe
-  /usr/share/application-registry/glabels.applications
-  /usr/share/applications/glabels.desktop
-  /usr/share/doc/glabels/AUTHORS
-  /usr/share/doc/glabels/COPYING
-  /usr/share/doc/glabels/COPYING-DOCS
-  /usr/share/doc/glabels/ChangeLog
-  /usr/share/doc/glabels/NEWS
-  /usr/share/doc/glabels/README
-  /usr/share/doc/glabels/TODO
-  /usr/share/glabels/dtd/glabels-2.2.dtd
-  /usr/share/glabels/glade/merge-properties-dialog.glade
-  /usr/share/glabels/glade/new-label-dialog.glade
-  /usr/share/glabels/glade/object-editor.glade
-  /usr/share/glabels/glade/prefs-dialog.glade
-  /usr/share/glabels/glade/print-custom-widget.glade
-  /usr/share/glabels/glade/property-bar.glade
-  /usr/share/glabels/glade/template-designer.glade
-  /usr/share/glabels/glade/wdgt-media-select.glade
-  /usr/share/glabels/glade/wdgt-rotate-label.glade
-  /usr/share/glabels/templates/avery-iso-templates.xml
-  /usr/share/glabels/templates/avery-other-templates.xml
-  /usr/share/glabels/templates/avery-us-templates.xml
-  /usr/share/glabels/templates/brother-other-templates.xml
-  /usr/share/glabels/templates/categories.xml
-  /usr/share/glabels/templates/dymo-other-templates.xml
-  /usr/share/glabels/templates/misc-iso-templates.xml
-  /usr/share/glabels/templates/misc-other-templates.xml
-  /usr/share/glabels/templates/misc-us-templates.xml
-  /usr/share/glabels/templates/paper-sizes.xml
-  /usr/share/glabels/templates/zweckform-iso-templates.xml
-  /usr/share/gnome/help/glabels/C/figures/glabels-template-cd.png
-  /usr/share/gnome/help/glabels/C/figures/glabels-template-label.png
-  /usr/share/gnome/help/glabels/C/figures/glabels-template-layout.png
-  /usr/share/gnome/help/glabels/C/figures/main-window-empty.png
-  /usr/share/gnome/help/glabels/C/figures/merge-ex1-1.png
-  /usr/share/gnome/help/glabels/C/figures/merge-ex1-2.png
-  /usr/share/gnome/help/glabels/C/figures/merge-ex1-3.png
-  /usr/share/gnome/help/glabels/C/figures/merge-ex1-4.png
-  /usr/share/gnome/help/glabels/C/figures/merge-ex2-1.png
-  /usr/share/gnome/help/glabels/C/figures/merge-ex2-2.png
-  /usr/share/gnome/help/glabels/C/figures/merge-ex2-3.png
-  /usr/share/gnome/help/glabels/C/figures/merge-ex2-4.png
-  /usr/share/gnome/help/glabels/C/figures/object-editor-sidebar.png
-  /usr/share/gnome/help/glabels/C/figures/print-copies.png
-  /usr/share/gnome/help/glabels/C/figures/print-merge.png
-  /usr/share/gnome/help/glabels/C/glabels.xml
-  /usr/share/gnome/help/glabels/C/legal.xml
-  /usr/share/locale/cs/LC_MESSAGES/glabels.mo
-  /usr/share/locale/de/LC_MESSAGES/glabels.mo
-  /usr/share/locale/eo/LC_MESSAGES/glabels.mo
-  /usr/share/locale/es/LC_MESSAGES/glabels.mo
-  /usr/share/locale/fr/LC_MESSAGES/glabels.mo
-  /usr/share/locale/it/LC_MESSAGES/glabels.mo
-  /usr/share/locale/ja/LC_MESSAGES/glabels.mo
-  /usr/share/locale/ko/LC_MESSAGES/glabels.mo
-  /usr/share/locale/pl/LC_MESSAGES/glabels.mo
-  /usr/share/locale/pt_BR/LC_MESSAGES/glabels.mo
-  /usr/share/locale/ru/LC_MESSAGES/glabels.mo
-  /usr/share/locale/zh_TW.Big5/LC_MESSAGES/glabels.mo
-  /usr/share/man/man1/glabels.1.gz
-  /usr/share/mime-info/glabels.keys
-  /usr/share/mime-info/glabels.mime
-  /usr/share/mime/packages/glabels.xml
-  /usr/share/omf/glabels/glabels-C.omf
-  /usr/share/pixmaps/glabels-application-x-glabels.png
-  /usr/share/pixmaps/glabels.png
-  /usr/share/pixmaps/glabels/ex-1layout.png
-  /usr/share/pixmaps/glabels/ex-2layouts.png
-  /usr/share/pixmaps/glabels/ex-cd-size.png
-  /usr/share/pixmaps/glabels/ex-rect-size.png
-  /usr/share/pixmaps/glabels/ex-round-size.png
-  /usr/share/pixmaps/glabels/glabels-about-logo.png
-  /usr/share/pixmaps/glabels/glabels-splash.png
-
-(libglabels5)
-  /usr/bin/cygglabels-5.dll
-
-(libglabels-devel)
-  /usr/include/libglabels/category.h
-  /usr/include/libglabels/db.h
-  /usr/include/libglabels/enums.h
-  /usr/include/libglabels/libglabels.h
-  /usr/include/libglabels/paper.h
-  /usr/include/libglabels/str.h
-  /usr/include/libglabels/template.h
-  /usr/include/libglabels/xml-category.h
-  /usr/include/libglabels/xml-paper.h
-  /usr/include/libglabels/xml-template.h
-  /usr/include/libglabels/xml.h
-  /usr/lib/libglabels.dll.a
-  /usr/lib/libglabels.la
-  /usr/lib/pkgconfig/libglabels.pc
-  /usr/share/gtk-doc/html/libglabels/ch01.html
-  /usr/share/gtk-doc/html/libglabels/ch02.html
-  /usr/share/gtk-doc/html/libglabels/ch03.html
-  /usr/share/gtk-doc/html/libglabels/home.png
-  /usr/share/gtk-doc/html/libglabels/index.html
-  /usr/share/gtk-doc/html/libglabels/index.sgml
-  /usr/share/gtk-doc/html/libglabels/left.png
-  /usr/share/gtk-doc/html/libglabels/libglabels-category.html
-  /usr/share/gtk-doc/html/libglabels/libglabels-db.html
-  /usr/share/gtk-doc/html/libglabels/libglabels-enums.html
-  /usr/share/gtk-doc/html/libglabels/libglabels-paper.html
-  /usr/share/gtk-doc/html/libglabels/libglabels-str.html
-  /usr/share/gtk-doc/html/libglabels/libglabels-template.html
-  /usr/share/gtk-doc/html/libglabels/libglabels-xml-category.html
-  /usr/share/gtk-doc/html/libglabels/libglabels-xml-paper.html
-  /usr/share/gtk-doc/html/libglabels/libglabels-xml-template.html
-  /usr/share/gtk-doc/html/libglabels/libglabels-xml.html
-  /usr/share/gtk-doc/html/libglabels/libglabels.devhelp
-  /usr/share/gtk-doc/html/libglabels/libglabels.devhelp2
-  /usr/share/gtk-doc/html/libglabels/right.png
-  /usr/share/gtk-doc/html/libglabels/style.css
-  /usr/share/gtk-doc/html/libglabels/up.png
-
---------------------
-
 Port Notes:
+
+----- version 2.2.6-1 -----
+Version bump.
 
 ----- version 2.2.5-2 -----
 Enabled Evolution-Data-Server addressbook support.
