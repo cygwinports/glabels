@@ -1,0 +1,20 @@
+--- origsrc/glabels-3.0.0/configure.ac	2011-05-16 10:31:02.000000000 -0500
++++ src/glabels-3.0.0/configure.ac	2011-05-26 23:17:18.809774800 -0500
+@@ -162,7 +162,7 @@ dnl ------------------------------------
+ dnl - LIBGLABELS more modest prerequisites
+ dnl ---------------------------------------------------------------------------
+ PKG_CHECK_MODULES(LIBGLABELS, [\
+-	glib-2.0 >= $GLIB_REQUIRED \
++	gobject-2.0 >= $GLIB_REQUIRED \
+ 	libxml-2.0 >= $LIBXML_REQUIRED \
+ ])
+ 
+@@ -176,7 +176,7 @@ dnl ------------------------------------
+ PKG_CHECK_MODULES(LIBGLBARCODE, [\
+ 	glib-2.0 >= $GLIB_REQUIRED \
+ 	cairo >= $CAIRO_REQUIRED \
+-	pango >= $PANGO_REQUIRED \
++	pangocairo >= $PANGO_REQUIRED \
+ ])
+ 
+ AC_SUBST(LIBGLBARCODE_CFLAGS)

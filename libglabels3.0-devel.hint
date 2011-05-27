@@ -1,0 +1,6 @@
+category: Publishing Gnome
+requires: libglabels3.0_8 libglib2.0-devel gettext libxml2-devel
+external-source: glabels
+sdesc: "GNOME label database library (development)"
+ldesc: "gLabels is a small stand-alone program for creating
+printable labels and business cards."

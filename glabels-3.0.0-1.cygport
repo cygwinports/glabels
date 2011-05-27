@@ -1,0 +1,19 @@
+inherit gnome2
+
+DESCRIPTION="GNOME label and business card creator"
+HOMEPAGE="http://glabels.sourceforge.net/"
+
+PATCH_URI="3.0.0-configure-deps.patch"
+
+PKG_NAMES="${PN} libglabels3.0_8 libglabels3.0-common libglabels3.0-devel
+           libglbarcode3.0_0 libglbarcode3.0-devel"
+glabels_CONTENTS='--exclude=gtk-doc --exclude=libglabels-3.0 etc/ usr/bin/*.exe usr/share/'
+libglabels3_0_8_CONTENTS="usr/bin/cygglabels-3.0-8.dll"
+libglabels3_0_common_CONTENTS="usr/share/libglabels-3.0/"
+libglabels3_0_devel_CONTENTS="usr/include/libglabels-3.0/ usr/lib/libglabels-3.0.*
+	usr/lib/pkgconfig/libglabels-3.0.pc usr/share/gtk-doc/html/libglabels-3.0/"
+libglbarcode3_0_0_CONTENTS="usr/bin/cygglbarcode-3.0-0.dll"
+libglbarcode3_0_devel_CONTENTS="usr/include/libglbarcode-3.0/ usr/lib/libglbarcode-3.0.*
+	usr/lib/pkgconfig/libglbarcode-3.0.pc usr/share/gtk-doc/html/libglbarcode-3.0/"
+
+DOCS="COPYING-DOCS COPYING-LIBS COPYING-TEMPLATES"

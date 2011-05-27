@@ -1,0 +1,6 @@
+category: Publishing Gnome
+requires: libglbarcode3.0_0 libcairo-devel libglib2.0-devel libpango1.0-devel
+external-source: glabels
+sdesc: "gLabels barcode library (development)"
+ldesc: "gLabels is a small stand-alone program for creating
+printable labels and business cards."
