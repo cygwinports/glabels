@@ -17,3 +17,5 @@ libglbarcode3_0_devel_CONTENTS="usr/include/libglbarcode-3.0/ usr/lib/libglbarco
 	usr/lib/pkgconfig/libglbarcode-3.0.pc usr/share/gtk-doc/html/libglbarcode-3.0/"
 
 DOCS="COPYING-DOCS COPYING-LIBS COPYING-TEMPLATES"
+
+KEEP_LA_FILES="none"
