@@ -1,18 +1,30 @@
 inherit gnome2
 
-DESCRIPTION="GNOME label and business card creator"
+NAME="glabels"
+VERSION=3.0.1
+RELEASE=1
+CATEGORY="Publishing Gnome"
+SUMMARY="GNOME label and business card creator"
+DESCRIPTION="gLabels is a program for creating labels and business cards for
+the GNOME desktop environment. It is designed to work with various laser and
+ink-jet peel-off label and business card sheets that you'll find at most
+office supply stores."
 HOMEPAGE="http://glabels.sourceforge.net/"
-
-PATCH_URI="3.0.0-configure-deps.patch"
 
 PKG_NAMES="${PN} libglabels3.0_8 libglabels3.0-common libglabels3.0-devel
            libglbarcode3.0_0 libglbarcode3.0-devel"
 glabels_CONTENTS='--exclude=gtk-doc --exclude=libglabels-3.0 etc/ usr/bin/*.exe usr/share/'
+libglabels3_0_8_SUMMARY="gLabels label database library (runtime)"
+libglabels3_0_8_REQUIRES="libgabels3.0-common"
 libglabels3_0_8_CONTENTS="usr/bin/cygglabels-3.0-8.dll"
+libglabels3_0_common_SUMMARY="gLabels label database library (data)"
 libglabels3_0_common_CONTENTS="usr/share/libglabels-3.0/"
+libglabels3_0_devel_SUMMARY="gLabels label database library (development)"
 libglabels3_0_devel_CONTENTS="usr/include/libglabels-3.0/ usr/lib/libglabels-3.0.*
 	usr/lib/pkgconfig/libglabels-3.0.pc usr/share/gtk-doc/html/libglabels-3.0/"
+libglbarcode3_0_0_SUMMARY="gLabels barcode library (runtime)"
 libglbarcode3_0_0_CONTENTS="usr/bin/cygglbarcode-3.0-0.dll"
+libglbarcode3_0_devel_SUMMARY="gLabels barcode library (development)"
 libglbarcode3_0_devel_CONTENTS="usr/include/libglbarcode-3.0/ usr/lib/libglbarcode-3.0.*
 	usr/lib/pkgconfig/libglbarcode-3.0.pc usr/share/gtk-doc/html/libglbarcode-3.0/"
 

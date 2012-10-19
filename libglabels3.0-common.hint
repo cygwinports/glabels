@@ -1,6 +1,0 @@
-category: Publishing Gnome
-requires:
-external-source: glabels
-sdesc: "GNOME label database library (runtime data)"
-ldesc: "gLabels is a small stand-alone program for creating
-printable labels and business cards."

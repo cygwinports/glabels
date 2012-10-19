@@ -1,5 +1,0 @@
-category: Publishing Gnome
-requires: libcairo2 libebook1.2_13 libgdk_pixbuf2.0_0 libglabels3.0_8 libglbarcode3.0_0 libglib2.0_0 libgtk3_0 libiec16022_0 libintl8 libpango1.0_0 libqrencode3 librsvg2_2 libxml2 libzint2.4
-sdesc: "GNOME label and business card creator"
-ldesc: "gLabels is a small stand-alone program for creating
-printable labels and business cards."
