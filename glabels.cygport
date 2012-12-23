@@ -2,14 +2,16 @@ inherit gnome2
 
 NAME="glabels"
 VERSION=3.0.1
-RELEASE=1
-CATEGORY="Publishing Gnome"
+RELEASE=2
+CATEGORY="Publishing GNOME"
 SUMMARY="GNOME label and business card creator"
 DESCRIPTION="gLabels is a program for creating labels and business cards for
 the GNOME desktop environment. It is designed to work with various laser and
 ink-jet peel-off label and business card sheets that you'll find at most
 office supply stores."
 HOMEPAGE="http://glabels.sourceforge.net/"
+
+PATCH_URI="http://pkgs.fedoraproject.org/cgit/glabels.git/plain/glabels-3.0.0-new-eds.patch"
 
 PKG_NAMES="${PN} libglabels3.0_8 libglabels3.0-common libglabels3.0-devel
            libglbarcode3.0_0 libglbarcode3.0-devel"
@@ -30,4 +32,3 @@ libglbarcode3_0_devel_CONTENTS="usr/include/libglbarcode-3.0/ usr/lib/libglbarco
 
 DOCS="COPYING-DOCS COPYING-LIBS COPYING-TEMPLATES"
 
-KEEP_LA_FILES="none"
