@@ -1,9 +1,9 @@
 inherit gnome2
 
 NAME="glabels"
-VERSION=3.0.1
-RELEASE=2
-CATEGORY="Publishing GNOME"
+VERSION=3.2.0
+RELEASE=1
+CATEGORY="Publishing"
 SUMMARY="GNOME label and business card creator"
 DESCRIPTION="gLabels is a program for creating labels and business cards for
 the GNOME desktop environment. It is designed to work with various laser and
@@ -13,22 +13,25 @@ HOMEPAGE="http://glabels.sourceforge.net/"
 
 PATCH_URI="http://pkgs.fedoraproject.org/cgit/glabels.git/plain/glabels-3.0.0-new-eds.patch"
 
-PKG_NAMES="${PN} libglabels3.0_8 libglabels3.0-common libglabels3.0-devel
+PKG_NAMES="${PN} libglabels3.0_8 libglabels3.0-common libglabels3.0-devel libglabels3.0-doc
            libglbarcode3.0_0 libglbarcode3.0-devel"
 glabels_CONTENTS='--exclude=gtk-doc --exclude=libglabels-3.0 etc/ usr/bin/*.exe usr/share/'
 libglabels3_0_8_SUMMARY="gLabels label database library (runtime)"
-libglabels3_0_8_REQUIRES="libgabels3.0-common"
+libglabels3_0_8_REQUIRES="libglabels3.0-common"
 libglabels3_0_8_CONTENTS="usr/bin/cygglabels-3.0-8.dll"
 libglabels3_0_common_SUMMARY="gLabels label database library (data)"
 libglabels3_0_common_CONTENTS="usr/share/libglabels-3.0/"
 libglabels3_0_devel_SUMMARY="gLabels label database library (development)"
 libglabels3_0_devel_CONTENTS="usr/include/libglabels-3.0/ usr/lib/libglabels-3.0.*
-	usr/lib/pkgconfig/libglabels-3.0.pc usr/share/gtk-doc/html/libglabels-3.0/"
+	usr/lib/pkgconfig/libglabels-3.0.pc"
+libglabels3_0_doc_CATEGORY="Doc"
+libglabels3_0_doc_SUMMARY="gLabels label database library (API documentation)"
+libglabels3_0_doc_CONTENTS="usr/share/gtk-doc/"
 libglbarcode3_0_0_SUMMARY="gLabels barcode library (runtime)"
 libglbarcode3_0_0_CONTENTS="usr/bin/cygglbarcode-3.0-0.dll"
 libglbarcode3_0_devel_SUMMARY="gLabels barcode library (development)"
 libglbarcode3_0_devel_CONTENTS="usr/include/libglbarcode-3.0/ usr/lib/libglbarcode-3.0.*
-	usr/lib/pkgconfig/libglbarcode-3.0.pc usr/share/gtk-doc/html/libglbarcode-3.0/"
+	usr/lib/pkgconfig/libglbarcode-3.0.pc"
 
 DOCS="COPYING-DOCS COPYING-LIBS COPYING-TEMPLATES"
 
