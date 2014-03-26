@@ -11,9 +11,7 @@ ink-jet peel-off label and business card sheets that you'll find at most
 office supply stores."
 HOMEPAGE="http://glabels.sourceforge.net/"
 
-PATCH_URI="http://pkgs.fedoraproject.org/cgit/glabels.git/plain/glabels-3.0.0-new-eds.patch"
-
-PKG_NAMES="${PN} libglabels3.0_8 libglabels3.0-common libglabels3.0-devel libglabels3.0-doc
+PKG_NAMES="${NAME} libglabels3.0_8 libglabels3.0-common libglabels3.0-devel libglabels3.0-doc
            libglbarcode3.0_0 libglbarcode3.0-devel"
 glabels_CONTENTS='--exclude=gtk-doc --exclude=libglabels-3.0 etc/ usr/bin/*.exe usr/share/'
 libglabels3_0_8_SUMMARY="gLabels label database library (runtime)"
